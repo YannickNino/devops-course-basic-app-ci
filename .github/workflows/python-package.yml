@@ -1,0 +1,15 @@
+name: Mon Deuxième Workflow
+ 
+on:
+  push:
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up python en 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
